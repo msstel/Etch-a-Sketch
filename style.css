@@ -1,0 +1,134 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.title h1 {
+    font-size: 4em;
+    margin-top: 2rem; 
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 700px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.box {
+    gap: 10px;
+}
+
+button {
+    height: 35px;
+    width: 80px;
+    border: 1px solid;
+    background-color:  rgb(61, 64, 64);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+button:hover {
+    background-color: rgb(215, 131, 131); /* Green */
+    color: white;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* color picker*/
+.colorpicker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+
+.color span {
+    align-items: center;
+}
+
+#color {
+    width: 90px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+/*slider*/
+input {
+    -webkit-appearance: none;
+    margin-bottom: 15px;
+}
+
+input::-webkit-slider-runnable-track {
+    width: 300px;
+    height: 5px;
+    background: rgb(0, 0, 0);
+    border: none;
+    border-radius: 3px;
+}
+
+input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: rgb(53, 51, 47);
+    margin-top: -5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus::-webkit-slider-runnable-track {
+    background: rgb(215, 131, 131);
+}
+
+.grid {
+    display: inline-grid;
+    grid-template-rows: repeat(16, 2fr);
+    grid-template-columns: repeat(16, 2fr);
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    background-color: rgb(240, 240, 240);
+    margin-bottom: 5em;
+}
+
+.cell.active {
+    background-color: black;
+  }
+
+footer {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 500px) {
+    h1 {
+      font-size: 45px;
+    }
+  
+    box {
+        height: 25px;
+        width: 50px;
+    }
+  
+    .grid {
+        height: 400px;
+        width: 400px;
+
+    }
+  }

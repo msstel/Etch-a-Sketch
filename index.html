@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" type='text/css' href="style.css">
+</head>
+<body>
+   
+    <div class="title">
+        <h1>Etch-a-Sketch</h1>
+    </div>
+    <div class="box">
+        <button id="black">Black</button>
+        <button id="rainbow">Rainbow</button>
+        <button id="eraser">Eraser</button>
+        <button id="reset">Reset</button>
+        <button id="colorBtn">Color</button>
+        <div class="colorPicker">
+            <input type="color" id="color" value="#000000">
+        </div>
+        <div class="sliderAndValue">
+            <input type="range" min="2" max="100" value="16" id="slider">
+            <p class="value">16</p>
+        </div>
+    </div>
+    <div class="grid">
+    </div>
+
+    <footer>
+    <p>The Odin Project 2022</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
